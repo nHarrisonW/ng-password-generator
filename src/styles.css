@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* 
+font-family: 'Geologica', sans-serif;
+font-family: 'Press Start 2P', cursive;
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;400&family=Press+Start+2P&display=swap');
+@import '~bootstrap/dist/css/bootstrap.css';
+
+
+:root{
+    --violet:#3943B7;
+    --federal:#0E0E52;
+    --navy:#150578;
+    --celeste:#449DD1;
+    --sky:#78C0E0;
+}
+
+ .parent-bg, html {
+    background: var(--federal);
+    color: var(--sky);
+}

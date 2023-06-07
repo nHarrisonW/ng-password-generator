@@ -1,0 +1,11 @@
+.footer-parent{
+    background: #00000052;
+    bottom: 0;
+
+    position: absolute;
+    width: 100%;
+}
+.footer-logo {
+    height: 50px;
+    display: inline-flex;
+}
