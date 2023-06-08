@@ -6,6 +6,8 @@ import { NewpasswordComponent } from './newpassword/newpassword.component';
 import { HerocompComponent } from './herocomp/herocomp.component';
 import { FootercompComponent } from './footercomp/footercomp.component';
 
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,8 @@ import { FootercompComponent } from './footercomp/footercomp.component';
     FootercompComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

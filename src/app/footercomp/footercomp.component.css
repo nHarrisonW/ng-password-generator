@@ -4,8 +4,19 @@
 
     position: absolute;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  font-family: "Geologica", sans-serif;
 }
 .footer-logo {
     height: 50px;
-    display: inline-flex;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.footer-text{
+    display: flex;
+    flex-direction: column;
 }
