@@ -6,12 +6,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./newpassword.component.css'],
 })
 export class NewpasswordComponent {
+  showToast=false;
+  toastMessage='';
   alert = ' ';
   length = 8;
   include_letters = true;
   include_numbers = false;
   include_symbols = true;
   password = '';
+
+  showCopyToast() {
+    console.log('showToast!');
+    this.showToast = true;
+    this.toastMessage = 'Your new password has been copied';
+
+    // Hide the toast after 3 seconds (adjust duration as needed)
+    setTimeout(() => {
+      this.showToast = false;
+      this.toastMessage = '';
+      console.log('Cleared');
+    }, 3000);
+  }
 
   ngOnInit() {
     this.generate_password();
@@ -24,6 +39,7 @@ export class NewpasswordComponent {
     textField.select();
     document.execCommand('copy');
     textField.remove();
+    this.showCopyToast();
   }
 
   onchange_use_numbers() {
@@ -43,7 +59,7 @@ export class NewpasswordComponent {
       if (parsedValue>28) {
         this.alert='OUCH! IT HURTS WHEN YOU BREAK ME!'
       }else if (parsedValue < 8) {
-        this.alert = 'This password is too weak!';
+        this.alert = 'Password is weak!';
       } else {
         this.alert = '';
       }
