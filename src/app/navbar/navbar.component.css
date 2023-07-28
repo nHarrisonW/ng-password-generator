@@ -1,0 +1,40 @@
+
+
+nav{
+    background: #F0EFF4;
+    
+    align-items: center;
+    
+    border-bottom: 1px solid #DDDDDD;
+    
+    font-family: "Geologica", sans-serif;
+}
+
+.nav-parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 25px 0;
+}
+
+.nav-logo{
+    height: 60px;
+    margin-right: 20px;
+}
+.my-link{
+    color: #000;
+    margin: 0 20px;
+    transition: ease-in-out 200ms;
+}
+.my-link:hover{
+    color: #FF7700;
+}
+.linkedIn{
+    border-radius: 50%;
+    border: 1px solid black;
+    transition: ease-in-out 200ms;
+}
+.linkedIn:hover{
+    border: 1px solid #FF7700;
+}

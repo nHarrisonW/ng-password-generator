@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NewpasswordComponent {
   showToast=false;
   toastMessage='';
-  alert = ' ';
+  alert = 'Password is OK.';
   length = 8;
   include_letters = true;
   include_numbers = false;
@@ -56,12 +56,16 @@ export class NewpasswordComponent {
     const parsedValue = parseInt(value);
 
     if (!isNaN(parsedValue)) {
-      if (parsedValue>28) {
+      if (parsedValue>98) {
         this.alert='OUCH! IT HURTS WHEN YOU BREAK ME!'
       }else if (parsedValue < 8) {
         this.alert = 'Password is weak!';
-      } else {
-        this.alert = '';
+      } else if(parsedValue<17){
+        this.alert = 'Password is OK.';
+      }else if(parsedValue<=30){
+        this.alert = 'Password is Strong!';
+      }else{
+        this.alert = 'Password is Very Strong! ✔';
       }
       this.length = parsedValue;
     }
@@ -84,10 +88,7 @@ export class NewpasswordComponent {
       valid_chars += symbols;
     }
     if(!this.include_letters && !this.include_numbers && !this.include_symbols){
-      valid_chars+=letters;
-      valid_chars+=numbers;
-      valid_chars+=symbols;
-      
+      return;
     }
 
     let generated_password = '';

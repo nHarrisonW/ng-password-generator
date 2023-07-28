@@ -1,15 +1,16 @@
 .hero-parent {
 font-family: 'Geologica', sans-serif;
+margin-top: 32px;
+
 }
 
 .hero-parent p{
-    margin-bottom: 8px;
+  margin: 0;
 }
 .title{
   font-family: "Press Start 2P", cursive;
 
   /* font-size: 30px; */
-  color: rgb(10, 180, 55);
-  text-shadow: 1px 1px 1px #000;
-  
+  color: #F26430;
+  text-shadow: 1px 1px 0 #000;
 }

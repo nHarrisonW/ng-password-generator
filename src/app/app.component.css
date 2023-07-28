@@ -1,9 +1,17 @@
 
 
 
-.parent-bg{
+.parent-bg,html{
     min-height: 100vh;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+  color: #04151F;
+  background: #F0EFF4;
+}
+
+.my-navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10000;
 }

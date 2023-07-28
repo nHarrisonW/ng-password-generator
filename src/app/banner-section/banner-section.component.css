@@ -1,0 +1,19 @@
+
+
+.banner-title {
+  color: #ffffff;
+  text-shadow: 1px 1px 0 #000000;
+}
+.banner-parent {
+  font-family: "Geologica", sans-serif;
+  background: #6C91C2;
+  color: white;
+  padding: 20px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.banner-section{
+    width: 30%;
+}
